@@ -1,10 +1,10 @@
 <?php
 
-function emptyInputSignup($email, $pwd, $pwdRepeat)
+function emptyInputSignup($email, $pwd, $pwdRepeat, $reEmail,$reType)
 {
     $result;
 
-    if ( empty($email) || empty($pwd) || empty($pwdRepeat)) {
+    if ( empty($email) || empty($pwd) || empty($pwdRepeat) || empty($reEmail) || empty ($reType)) {
         $result = true;
     } else {
         $result = false;

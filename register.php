@@ -35,6 +35,8 @@
                         echo "<p>Something went wrong! Please try again or contact the tech team</p>";
                     } else if ($_GET["error"] == "nonExistentUser") {
                         echo "<p>User does not exist. Please register instead</p>";
+                    } else if($_GET["error"] == "reTypeMissing"){
+                        echo "<p>Please Select Registration Type (Individual or School)</p>";
                     }
                 }
                 ?>
