@@ -1,9 +1,9 @@
 <?php
 
  $servername="localhost";
-$dbUsername="root";
-$dbPassword="";
-$dbName="jbcnmun22";  
+$dbUsername="u429279072_jbcn";
+$dbPassword="5MZeczlH?";
+$dbName="u429279072_jbcnmun2022";  
  
 // $servername="localhost";
 // $dbUsername="u429279072_iyc";
