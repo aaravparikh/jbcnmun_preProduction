@@ -117,5 +117,6 @@ if ($delData !== null) {
             <div class="socialIcon"><i class="fa-brands fa-facebook-square"></i></div>
             <div class="socialIcon"><i class="fa-brands fa-twitter-square"></i></div>
         </div>
+        Built By Scorpyn
     </div>
 </div>
