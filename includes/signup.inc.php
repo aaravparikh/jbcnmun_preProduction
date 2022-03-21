@@ -6,6 +6,7 @@ if(isset($_POST["submit"])){
     $pwd = $_POST["pwd"];
     $pwdRepeat = $_POST["rePwd"];
     $reEmail = $_POST["reEmail"];
+    $reType = $_POST["registration-pipeline"];
 
     require_once 'dbh.inc.php';
     require_once 'functions.inc.php';
@@ -34,7 +35,7 @@ if(isset($_POST["submit"])){
         exit();
     }
     else{
-    createUser($conn, $email, $pwd);
+    createUser($conn, $email, $pwd, $reType);
     }
 
 

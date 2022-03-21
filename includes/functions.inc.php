@@ -95,16 +95,16 @@ function emailExists($conn, $email)
     mysqli_stmt_close($stmt);
 }
 
-function createUser($conn, $email, $pwd)
+function createUser($conn, $email, $pwd, $reType)
 {
-    $sql = "INSERT INTO users  (userEmail, userPwd ) VALUES (?,?);";
+    $sql = "INSERT INTO users  (userEmail, userPwd, reType ) VALUES (?,?,?);";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("location:../register.php?error=stmtFailure");
         exit();
     }
 
-    mysqli_stmt_bind_param($stmt, "ss", $email, $pwd);
+    mysqli_stmt_bind_param($stmt, "sss", $email, $pwd, $reType);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt); 
     header("location:../login");
