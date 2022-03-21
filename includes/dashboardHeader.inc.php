@@ -111,12 +111,13 @@ if ($delData !== null) {
     <div class="bottomNav">
         <div class="logo">
             <img class="sideLogo" src="assets/jbcnLogo.png" alt="">
+            Built By Scorpyn
+
         </div>
         <div class="social">
             <div class="socialIcon"><i class="fa-brands fa-instagram"></i></div>
             <div class="socialIcon"><i class="fa-brands fa-facebook-square"></i></div>
             <div class="socialIcon"><i class="fa-brands fa-twitter-square"></i></div>
         </div>
-        Built By Scorpyn
     </div>
 </div>
