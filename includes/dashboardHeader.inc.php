@@ -51,7 +51,14 @@ if ($delData !== null) {
             </p>
         </div>
         <div class="logo">
-            <span class="enlarged fi fi-gr fis"></span>
+            <?php 
+                if($_SESSION["country"] == "unassigned"){                
+                    echo '<span class="enlarged fi fi-un"></span>';
+                } else{
+                    echo'<span class="enlarged fi fi-'.$_SESSION["country"].'"></span>';
+                }
+            ?>
+            
         </div>
     </div>
 </div>
@@ -111,7 +118,8 @@ if ($delData !== null) {
     <div class="bottomNav">
         <div class="logo">
             <img class="sideLogo" src="assets/jbcnLogo.png" alt="">
-            Built By Scorpyn
+            <br><br>
+            <p class="center">Built By Scorpyn</p>
 
         </div>
         <div class="social">

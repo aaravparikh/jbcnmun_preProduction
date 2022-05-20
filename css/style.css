@@ -93,11 +93,13 @@ p {
 }
 
 .enlarged {
-  height: 2em;
+  height: 100%;
+  width: 60px;
 }
 
 .logo {
   padding: 20px;
+  height: 100%;
 }
 
 .leftNav {
